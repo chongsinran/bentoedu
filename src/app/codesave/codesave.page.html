@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bento Code Studio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div style="padding: 20px;">
+    <ion-label>TypeScript</ion-label>
+    <ion-item>
+
+      <ion-textarea [(ngModel)]="codeTs"></ion-textarea>
+    </ion-item>
+
+    <div style="height: 20px;padding: 20px;"></div>
+    <ion-label>Html</ion-label>
+    <ion-item>
+
+      <ion-textarea [(ngModel)]="codeHtml"></ion-textarea>
+    </ion-item>
+
+    <div style="height: 20px;padding: 20px;"></div>
+    <ion-label>CSS</ion-label>
+    <ion-item>
+
+      <ion-textarea [(ngModel)]="codeCss"></ion-textarea>
+    </ion-item>
+  </div>
+
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Lesson
+      </ion-label>
+    </ion-list-header>
+  
+  
+  
+    <ion-item>
+      <ion-label>Lesson</ion-label>
+      <ion-select [(ngModel)]="lesson" (ionChange)="log()" value="lesson1" okText="Okay" cancelText="Dismiss">
+        <ion-select-option value="lesson1">lesson 1</ion-select-option>
+        <ion-select-option value="lesson2">lesson 2</ion-select-option>
+        <ion-select-option value="lesson3">lesson 3</ion-select-option>
+        <ion-select-option value="lesson4">lesson 4</ion-select-option>
+        <ion-select-option value="lesson5">lesson 5</ion-select-option>
+        <ion-select-option value="lesson6">lesson 6</ion-select-option>
+        <ion-select-option value="lesson7">lesson 7</ion-select-option>
+        <ion-select-option value="lesson8">lesson 8</ion-select-option>
+        <ion-select-option value="lesson9">lesson 9</ion-select-option>
+        <ion-select-option value="lesson10">lesson 10</ion-select-option>
+        <ion-select-option value="whiteboard">White Board</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>
+  <ion-button (click)="save()" expand="block" fill="clear" shape="round">
+   Save
+  </ion-button>
+</ion-content>

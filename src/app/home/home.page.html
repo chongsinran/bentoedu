@@ -1,0 +1,74 @@
+<ion-header>
+  <div class="topLine">
+    <div style="width:60px">
+      <img (click)="myProfile()" class="postTopImg"
+        src="{{myPicture}}"
+        alt="">
+    </div>
+    <div class="Bentograms">Bentograms</div>
+    <div (click)="goChat()" style="text-align:center;width:60px;" (click)="goChat()" fill="clear" shape="round">
+      <ion-icon style="font-size: 20px;" name="chatbubbles-outline"></ion-icon>
+    </div>
+
+
+
+  </div>
+
+</ion-header>
+<ion-content class="ionContent">
+  hello
+  
+  <div style="padding:20px">
+    <div *ngFor="let post of allPost" class="post">
+      <div class="postTop">
+
+        <img (click)="goProfile(post.userid)" class="postTopImg"
+          src="{{post.userpicture||'https://img.favpng.com/15/8/8/user-profile-2018-in-sight-user-conference-expo-business-default-png-favpng-5EdhQJprgN1HKZdx50LCN4zXg.jpg'}}"
+          alt="">
+
+        <div class="postTopName">
+          {{post.username}}
+        </div>
+      </div>
+      <div class="postMiddle">
+        <img style="width: 90vw;" src="{{post.picture}}" alt="">
+      </div>
+      <div class="postBottom">
+        {{post.title}}
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="fixedButton">
+    <ion-button (click)="addPost()" fill="clear">
+      <ion-icon style="font-size: xx-large;color:white" name="add"></ion-icon>
+    </ion-button>
+
+  </div>
+
+
+
+</ion-content>
+
+
+<ion-footer>
+ <div class="footerTab">
+   <div>
+    <ion-button (click)="Ficon='home'" fill="clear" shape="round">
+      <ion-icon [ngStyle]="(Ficon==='home')?{color: '#000000'}:''" class="footerIcon" name="home-outline" ></ion-icon>
+    </ion-button>
+   </div>
+   <div>
+    <ion-button (click)="Ficon='add'" fill="clear" shape="round">
+      <ion-icon [ngStyle]="(Ficon==='add')?{color: '#000000'}:''" class="footerIcon" name="add-circle-outline"></ion-icon>
+    </ion-button>
+   </div>
+   <div>
+    <ion-button (click)="Ficon='profile'" fill="clear" shape="round">
+      <ion-icon [ngStyle]="(Ficon==='profile')?{color: '#000000'}:''" class="footerIcon" name="person-outline"></ion-icon>
+    </ion-button>
+   </div>
+ </div>
+</ion-footer>

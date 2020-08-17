@@ -1,0 +1,58 @@
+
+<ion-content style="--background:rgb(32, 32, 32);">
+  
+  <div style="padding: 10px;margin: auto;max-width: 600px;background: rgb(241, 241, 241);">
+    
+    <div style="background: rgb(241, 241, 241)">
+      <img style="border-radius: 20px;" src="https://i.imgur.com/Qv5mwpe.png" alt="">
+
+    </div>
+    <div style="padding: 10px;">Week 1</div>
+    <div class="videoHolder">
+      <iframe style="border-radius:10px; width: 120px; height: 120px;"  src="https://www.youtube.com/embed/qYiVoWpz_go" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div style="padding-left: 20px; width: 500px;">
+        <div style="font-size: 16px; font-weight: 700;">Class 1 - 4 July 2020</div>
+        <div style="color: grey;font-size: small;padding:5px">HTML and CSS creating apps home page...</div>
+        <div (click)="lesson('lesson1')" class="getCode" style="font-size:15px;">Get Codes</div>
+
+      </div>
+    </div>
+
+    <div class="videoHolder">
+      <iframe style="border-radius:10px; width: 120px; height: 120px;" src="https://www.youtube.com/embed/QzwkHJHGorE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+      <div style="padding-left: 20px; width: 500px;">
+        <div style="font-size: 16px; font-weight: 700;">Class 2 - 5 July 2020</div>
+        <div style="color: grey;font-size: small;padding:5px">Objects, Arrays, Change pages...</div>
+        <div  (click)="lesson('lesson2')" class="getCode" style="font-size:15px;">Get Codes</div>
+
+      </div>
+    </div>
+
+
+
+    <div style="padding: 10px;">Week 2</div>
+    <div class="videoHolder">
+      
+      <div style=" max-width: 600px; width: 90vw;">
+        <div style="font-size: 16px; font-weight: 700;">Class 3 - 11 July 2020 (Coming Soon...)</div>
+        <div style="color: grey;font-size: small;padding:5px">Notations, Functions, variables, page change with parameters...</div>
+        <div (click)="lesson('lesson3')" class="getCode" style="font-size:15px;">Get Codes</div>
+
+      </div>
+    </div>
+
+   
+   
+   
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <div>
+    <ion-button (click)="jumpToApp()" expand="block"  >
+      Course Outcome App
+    </ion-button>
+  </div>
+</ion-footer>

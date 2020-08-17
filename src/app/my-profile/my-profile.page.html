@@ -1,0 +1,35 @@
+
+
+<ion-content>
+  <div style="display:flex; align-items:center">
+    <ion-button class="ion-no-padding" style="width:30px;" (click)="back()"  fill="clear" shape="round">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+  
+    </ion-button>
+   
+    <div>My Profile</div>
+  </div>
+
+  <div *ngIf="!imagec" style="width: 100vw;">
+    <img style="height: 50vw;width: 50vw;object-fit: cover;margin: 20px 25vw;border-radius: 100%;" src="{{user.picture}}" alt="">
+  </div>
+  <div class="changeButton" >
+    <label for="files" class="btn">
+      <div style="border-radius: 20px;padding: 10px;margin:auto;width: 50vw;color: white;text-align: center;background:rgb(99, 99, 99);" *ngIf="!imagec">
+        Change Picture
+      </div> 
+      <img style=" object-fit:cover;border-radius: 5px;margin:5vw;height: 90vw;width:90vw;" *ngIf="imagec" for="files" class='upphoto' src="{{imagec}}" alt="">
+    </label>
+    <input #uploadEl style="display: none" id="files" class="inputclass" accept="image/*" type="file"
+      (change)="fileChange($event)">
+  </div>
+  <canvas style="display: none;" id="canvas"></canvas>
+
+  <div style="text-align: center; padding: 11px;font-weight: 700;">
+    Welcome, {{user.name}}
+  </div>
+
+  <ion-button color="tertiary" (click)="signOut()" expand="block" fill="clear" shape="round">
+    Sign Out
+  </ion-button>
+</ion-content>

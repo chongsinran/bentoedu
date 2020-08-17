@@ -1,0 +1,47 @@
+{
+  "name": "angular-vlc",
+  "version": "1.1.2",
+  "homepage": "https://github.com/Tuxity/angular-vlc",
+  "authors": [
+    "Tuxity <kevin.darcel@gmail.com>",
+    "martialdidit <martial.puygrenier@gmail.com>"
+  ],
+  "description": "An AngularJS directive to include VLC Web Player code with a more beautiful & advanced interface",
+  "main": [
+    "dist/VLCPlayer.js",
+    "dist/VLCPlayer.css",
+    "dist/VLCPlayer.min.js",
+    "dist/VLCPlayer.min.css"
+  ],
+  "keywords": [
+    "video",
+    "player",
+    "web player",
+    "vlc",
+    "videolan",
+    "plugin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.26",
+    "angular-bootstrap": "~0.11.0",
+    "bootstrap": "~3.2.0"
+  },
+  "_release": "1.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.2",
+    "commit": "f5c68dd5fc1a5a927886e0bf22a7ec59d1a43039"
+  },
+  "_source": "https://github.com/Tuxity/angular-vlc.git",
+  "_target": "^1.1.2",
+  "_originalSource": "angular-vlc",
+  "_direct": true
+}

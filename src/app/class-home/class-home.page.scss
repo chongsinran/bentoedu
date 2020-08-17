@@ -1,0 +1,31 @@
+.videoHolder{
+  display: flex;
+  align-items: center;
+  padding:10px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;;
+}
+
+.getCode{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+
+}
+
+.getCode:hover{
+    width: 100%;
+    color: white;
+    background-color: rgb(58, 58, 58);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+
+}
+
+

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bento Code Studio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div style="margin: 20px;"></div>
+  <a style="color:blue; padding: 10px;" href="{{downloadlink}}" target="_blank">Download Lesson's Materials</a>
+  <div style="padding: 20px;">
+   
+    <ion-label>TypeScript</ion-label>
+    <ion-item>
+
+      <ion-textarea rows="20" [(ngModel)]="codeTs"></ion-textarea>
+    </ion-item>
+
+    <div style="height: 20px;padding: 20px;"></div>
+    <ion-label>Html</ion-label>
+    <ion-item>
+
+      <ion-textarea rows="20" [(ngModel)]="codeHtml"></ion-textarea>
+    </ion-item>
+
+    <div style="height: 20px;padding: 20px;"></div>
+    <ion-label>CSS</ion-label>
+    <ion-item>
+
+      <ion-textarea rows="20" [(ngModel)]="codeCss"></ion-textarea>
+    </ion-item>
+  </div>
+
+</ion-content>
